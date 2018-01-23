@@ -4,10 +4,15 @@
 \alias{exp_interp}
 \title{Fill missing data with exponential fit.}
 \usage{
-exp_interp(s_mass, po210, po201unc, pb210, pb210unc)
+exp_interp(x, depth, s_mass)
 }
 \arguments{
-\item{s_mass}{The section mass for the sample, in order by depth from highest sample to deepest.}
+\item{x}{A \code{vector} or \code{data.frame} to interpolate.}
 
-\item{x}{A \section{vector} or \code{data.frame} to interpolate.}
+\item{depth}{The core depth.}
+
+\item{s_mass}{The section mass for the sample, in order by depth from highest sample to deepest.}
+}
+\description{
+When \eqn{^210}Pb or other isotopic data is missing at a depth, fill in values using an eponential fit.
 }

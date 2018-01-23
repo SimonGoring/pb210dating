@@ -1,6 +1,7 @@
 #' @title Load constants for dating evaluation.
 #' @description Load in datasets and associated data to help construct age models.
-#' @param file
+#' @param file Local file from which to load constants.
+#' @export
 
 constants <- function(file, raw_data,
                       total_col, support_col,

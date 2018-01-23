@@ -1,7 +1,10 @@
 #' @title Fill missing data with exponential fit.
-#' @param x A \section{vector} or \code{data.frame} to interpolate.
+#' @description When \eqn{^210}Pb or other isotopic data is missing at a depth, fill in values using an eponential fit.
+#' @param x A \code{vector} or \code{data.frame} to interpolate.
+#' @param depth The core depth.
 #' @param s_mass The section mass for the sample, in order by depth from highest sample to deepest.
 #' @import dplyr
+#' @export
 
 exp_interp <- function(x, depth, s_mass) {
 
