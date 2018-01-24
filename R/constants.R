@@ -14,7 +14,7 @@ constants <- function(file, raw_data,
 
   meta <- validate_textfile(file)
 
- constants = list(transformed_table,
+  constants <- list(transformed_table,
                   meta,
                   NSectionDating,
                Lambda <- log(2) / use_lara()[1],
